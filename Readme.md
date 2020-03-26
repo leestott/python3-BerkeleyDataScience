@@ -8,7 +8,7 @@ The Visual Studio Code Remote - Containers extension lets you use a Docker conta
 
 Workspace files are mounted from the local file system or copied or cloned into the container. Extensions are installed and run inside the container, where they have full access to the tools, platform, and file system. This means that you can seamlessly switch your entire development environment just by connecting to a different container.
 
-## Running the container within VSCode on Windows, Mac or Linux
+# Running the container within VSCode on Windows, Mac or Linux
 
 You can run this container from VSCode locally see <a href ='https://code.visualstudio.com/docs/remote/containers' target='_blank'>https://code.visualstudio.com/docs/remote/containers</a>.
 
@@ -54,7 +54,7 @@ Install [Visual Studio Code](https://code.visualstudio.com/)
 
 Install the [Remote Development extension pack](https://aka.ms/vscode-remote/download/extension)
 
-## Loading the Docker container in Visual Studio Code 
+## Loading the Docker container in Visual Studio Code
 
 Let's start by using a sample project to try things out.
 
@@ -77,7 +77,7 @@ After the container is built, VS Code automatically connects to it and maps the 
 
 Tip: Want to use a remote Docker host? See the Advanced Containers article for details on setup
 
-## Running the container in Visual Studio Online (Browser Experience)
+# Running the container in Visual Studio Online (Browser Experience)
 
 install this in Visual Studio Online <a href='https://visualstudio.microsoft.com/services/visual-studio-online/' target ='blank'>https://visualstudio.microsoft.com/services/visual-studio-online/ you'll need the following:
 
