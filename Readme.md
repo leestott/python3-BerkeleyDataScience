@@ -1,6 +1,6 @@
 # Berkeley DataScience
 
-This repository contains a container build for Berkeley DataScience Libary and Otter Grader. This VScode container can be utilised to teach the concepts of DataScience, and the DataScience Python Library.
+This repository contains a container build for Berkeley DataScience Library and Otter Grader. This VScode container can be utilised to teach the concepts of DataScience, and the DataScience Python Library.
 
 ## Before You Start
 
@@ -28,7 +28,56 @@ You can run this container from VSCode locally see <a href ='https://code.visual
 - otter-grader
 - okpy  
 
-## Runing the container in Visual Studio Online (Browser Experience)
+You can run this container from VSCode locally see <a href ='https://code.visualstudio.com/docs/remote/containers' target='_blank'>https://code.visualstudio.com/docs/remote/containers</a>.
+
+## Quick Start Installation
+
+To get started, follow these steps:
+
+Install and configure [Docker](https://www.docker.com/get-started) for your operating system.
+
+Windows / macOS:
+
+Install Docker [Desktop for Windows/Mac](https://www.docker.com/products/docker-desktop)
+
+Right-click on the Docker taskbar item and update Settings / Preferences > Shared Drives / File Sharing with any source code locations you want to open in a container. If you run into trouble, see [Docker Desktop for Windows](https://code.visualstudio.com/docs/remote/troubleshooting#_docker-desktop-for-windows-tips) tips on avoiding common problems with sharing.
+
+Linux:
+
+Follow the official [install instructions for Docker](https://docs.docker.com/install/#supported-platforms) CE/EE for your distribution. If you are using Docker Compose, follow the [Docker Compose](https://docs.docker.com/compose/install/) directions as well.
+
+Add your user to the docker group by using a terminal to run: sudo usermod -aG docker $USER
+
+Sign out and back in again so your changes take effect.
+
+Install [Visual Studio Code](https://code.visualstudio.com/)
+
+Install the [Remote Development extension pack](https://aka.ms/vscode-remote/download/extension)
+
+## Loading the Docker container in Visual Studio Code 
+
+Let's start by using a sample project to try things out.
+
+Clone one of the repository
+
+Start VS Code and click on the quick actions Status Bar item in the lower left corner of the window.
+![VScodeStatusBar](https://code.visualstudio.com/assets/docs/remote/common/remote-dev-status-bar.png)
+
+Quick actions Status bar item
+
+Select Remote-Containers: Open Folder in Container... from the command list that appears, and open the root folder of the project you just cloned.
+
+The window will then reload, but since the container does not exist yet, VS Code will create one. This may take some time, and a progress notification will provide status updates. Fortunately, this step isn't necessary the next time you open the folder since the container will already exist.
+
+![ContainerProgress](https://code.visualstudio.com/assets/docs/remote/containers/dev-container-progress.png)
+
+Dev Container Progress Notification
+
+After the container is built, VS Code automatically connects to it and maps the project folder from your local file system into the container. Check out the Things to try section of README.md in the repository you cloned to see what to do next.
+
+Tip: Want to use a remote Docker host? See the Advanced Containers article for details on setup
+
+## Running the container in Visual Studio Online (Browser Experience)
 
 install this in Visual Studio Online <a href='https://visualstudio.microsoft.com/services/visual-studio-online/' target ='blank'>https://visualstudio.microsoft.com/services/visual-studio-online/ you'll need the following:
 
